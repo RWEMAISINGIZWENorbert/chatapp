@@ -5,11 +5,11 @@
     if(isset($_POST['submit'])){ // if user click the submit btn
         $ran_id = rand(time(), 1000000000); // creating random number
 
-        $name = mysqli_real_escape_string($conn, $_POST['name']);
+        // $name = mysqli_real_escape_string($conn, $_POST['name']);
         $fname = mysqli_real_escape_string($conn, $_POST['fname']);
         $email = mysqli_real_escape_string($conn, $_POST['email']);
-        $password = mysqli_real_escape_string($conn, md5($_POST['password']));
-        $cpassword = mysqli_real_escape_string($conn, md5($_POST['cpassword']));
+        $password = mysqli_real_escape_string($conn,md5($_POST['password']));
+        $cpassword = mysqli_real_escape_string($conn,md5($_POST['cpassword']));
         // declaring input
 
         if(filter_var($email, FILTER_VALIDATE_EMAIL)){// checking if email is valid

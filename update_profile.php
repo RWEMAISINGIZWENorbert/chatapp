@@ -85,7 +85,7 @@
             <div class="flex">
                 <div class="inputBox">
                     <span>username :</span>
-                    <input type="text" name="update_name" value="<?php echo $row['name'] ?>" class="box">
+                    <input type="text" name="update_name" value="<?php echo $row['lname'] ?>" class="box">
                     <span>your email :</span>
                     <input type="email" name="update_email" value="<?php echo $row['email'] ?>" class="box">
                     <span>update your pic</span>

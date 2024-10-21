@@ -28,7 +28,7 @@
                 <a href="home.php" class="back-icon"><img src="images/arrow.svg" alt=""></a>
                 <img src="uploaded_img/<?php echo $row['img'] ?>" alt="">
                 <div class="details">
-                    <span><?php echo $row['fname'] ?></span>
+                    <span><?php echo $row['fname'] ?></span> 
                     <p><?php echo $row['status'] ?></p>
                 </div>
             </header>
